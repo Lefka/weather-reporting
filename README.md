@@ -10,7 +10,7 @@ URL: https://u7dlx41h50.execute-api.us-east-1.amazonaws.com/prod/WEATHER-REPORT
 
 The solution will default to a short report if nothing is provided. You can also force a short report by explicitly providing the query string parameter "reportType" with a value of "Short". The output will currently come in JSON format like the following:
 
-{
+```{
   "reportSummary": {
     "minTemperature": 59,
     "maxTemperature": 105,
@@ -28,6 +28,7 @@ The solution will default to a short report if nothing is provided. You can also
   "temperatureStatus": "Warm",
   "rainStatus": "No Rain"
 }
+```
 
 ### Long report
 
@@ -37,7 +38,7 @@ https://u7dlx41h50.execute-api.us-east-1.amazonaws.com/prod/WEATHER-REPORT?repor
 
 The output will currently come in JSON format like the following:
 
-{
+```{
   "_forecastPeriods": 28,
   "reportSummary": [
     {
@@ -70,6 +71,7 @@ The output will currently come in JSON format like the following:
     }
   ]
 }
+```
 
 ## Useful commands
 
