@@ -13,7 +13,7 @@ export class WeatherReportRequest {
     reportType: string;
 
     constructor( event: APIGatewayProxyEvent ) {
-        this.reportType = ''; //TODO: Actually construct the request from the incoming event
+        this.reportType = event.queryStringParameters?.reportType ?? 'Short'; //Default to a short report
     }
 }
 

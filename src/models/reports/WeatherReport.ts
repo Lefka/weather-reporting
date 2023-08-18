@@ -12,7 +12,3 @@ export abstract class WeatherReport {
         return new ExcelReport();
     }
 }
-
-// At this point, I need to build the logic for storing the averages and all of that
-// Then I need to actuall save the data into XLS or PDF
-// I'll stop at that point most likely...

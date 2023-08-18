@@ -9,7 +9,7 @@ export class LongWeatherReport extends WeatherReport implements IWeatherReport {
 
     summary: string;
     dailyWeatherData: WeatherPeriod[]; //List of each period (considered days for simplicity)
-    reportSummary: WeatherSummary[]; //Averages for the duration
+    reportSummary: WeatherSummary[] = []; //Averages for the duration
 
     constructor( reportData: WeatherData ) {
         super();
